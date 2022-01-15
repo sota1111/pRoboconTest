@@ -1,0 +1,90 @@
+    1  sudo gedit /etc/default/grub
+    2  sudo update-grub
+    3  sudo -s
+    4  sudo snap install simplenote
+    5  sudo apt install ./simplenote-1.0.8.deb
+    6  cd '/home/sota/デスクトップ/install' 
+    7  sudo apt install ./Simplenote-linux-2.21.0-amd64.deb
+    8  cd '/home/sota/デスクトップ/install' ｓｄｈｆｈｊｈ
+    9  sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+   10  sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+   11  sudo apt update
+   12  sudo apt install ros-melodic-desktop-full [A
+   13  echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+   14  source ~/.bashrc
+   15  sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential python-catkin-tools
+   16  rosdep update
+   17  mkdir -p ~/catkin_ws/src
+   18  cd ~/catkin_ws
+   19  catkin init
+   20  catkin build
+   21  echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+   22  source ~/.bashrc
+   23  sudo apt-get install git
+   24  cd ~/catkin_ws/src
+   25  git clone https://github.com/sota1111/burger_war_dev.git
+   26  echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
+   27  source ~/.bashrc
+   28  sudo apt-get install python-pip
+   29  sudo pip install requests flask
+   30  sudo apt install  ros-melodic-turtlebot3 ros-melodic-turtlebot3-msgs  ros-melodic-turtlebot3-simulations  ros-melodic-teleop-twist-keyboard ros-melodic-amcl ros-melodic-map-server  ros-melodic-move-base ros-melodic-urdf ros-melodic-xacro  ros-melodic-compressed-image-transport ros-melodic-rqt-image-view  ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers  ros-melodic-hector-gazebo-plugins 
+   31  sudo apt install ros-melodic-aruco-ros
+   32  sudo apt install python-pil python-pil.imagetk
+   33  cd ~/catkin_ws
+   34  catkin build
+   35  source ~/.bashrc
+   36  cd ~/catkin_ws/src/burger_war_kit
+   37  cd ~/catkin_ws/src/burger_war_dev
+   38  gazebo
+   39  bash scripts/sim_with_judge.sh
+   40  cd '/home/sota/catkin_ws/src/burger_war_dev/burger_war_dev' 
+   41  gazebo
+   42  bash scripts/sim_with_judge.sh
+   43  cd ~/catkin_ws/src
+   44  git clone https://github.com/p-robotics-hub/burger_war_kit
+   45  cd ~/catkin_ws
+   46  catkin build
+   47  source ~/.bashrc
+   48  cd ~/catkin_ws/src/burger_war_kit
+   49  gazebo
+   50  bash scripts/sim_with_judge.sh
+   51  gazebo
+   52  cd ~/catkin_ws/src/burger_war_kit
+   53  bash scripts/start.sh
+   54  gazebo
+   55  gedit ~/.ignition/fuel/config.yaml
+   56  sudo gedit ~/.ignition/fuel/config.yaml
+   57  cd ~/catkin_ws/src/burger_war_kit
+   58  bash scripts/sim_with_judge.sh
+   59  curl --version
+   60  sudo gedit ~/.ignition/fuel/config.yaml
+   61  sudo apt-get install -y git curl
+   62  cd ~/catkin_ws
+   63  catkin build
+   64  source ~/.bashrc
+   65  cd ~/catkin_ws/src/burger_war_kit
+   66  gazebo
+   67  bash scripts/sim_with_judge.sh
+   68  ls
+   69  mkdir software
+   70  cd software/
+   71  ls
+   72  pwd
+   73  mkdir git_test
+   74  cd git_test
+   75  git clone https://github.com/sota1111/pRoboconTest.git
+   76  ls
+   77  cd pRoboconTest/
+   78  ls
+   79  ls -l
+   80  cat README.md 
+   81  git commit README.md 
+   82  git init
+   83  ls
+   84  ls -l
+   85  ll
+   86  git commit -m 'test comment'
+   87  git config --global user.name "sota1111"
+   88  git config --global user.email sota.moro@gmail.com
+   89  history
+   90  history > output
